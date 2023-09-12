@@ -5,40 +5,81 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-h4{
-    font-size: 3rem;
-}
-h5{
-    font-size: 2rem;
-    color: rgb(128, 128, 128);
-}
 p{
-    font-size: 0.5rem;
-    color: rgb(128, 128, 128);
+    font-size: 0.8rem;
+}
+h2{
+    font-size: 2.5rem;
+    color: white;
+}
+h4{
+    font-size: 1.5rem;
 }
 .outer{
+    max-width: 100%;
+    height: 100vh;
+    background: url(yiqun-tang-3o7O_6fi7Qc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    height: 100vh;
-    /* background-color: beige; */
-    background:linear-gradient(to right,rgb(66, 26, 211),rgba(45, 102, 225, 0.381));
+    background-color: rgba(50, 42, 42, 0.39);
+    background-blend-mode: darken;
 }
-
 .inner{
-    width: 800px;
-    height: 200px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.tspace{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
+}
+
+.blocks{
+    display: flex;
+    gap: 40px;
+}
+.block{
+    background-color: white;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:569px) {
+    p{
+        font-size: 0.7rem;
+    }
+    h2{
+        font-size: 2rem;
+        
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .block{
+        width: 75px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:469px) {
+    p{
+        font-size: 0.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        
+    }
+    h4{
+        font-size: 1rem;
+    }
+    .block{
+        width: 50px;
+        height: 30px;
+    }
 }
